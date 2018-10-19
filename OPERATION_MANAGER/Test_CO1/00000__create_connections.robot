@@ -13,6 +13,11 @@ Create SAL Event Logger Session
     [Tags]    smoke
     Open SSH Connection    SALEventLogger    ${timeout}
 
+Testing stuff
+	[Tags]    smoke
+	${output}=    Run    pwd
+	${output}=    Run    ls
+
 Create Operation Manager Session
     [Documentation]    Connect to the TMA host.
     [Tags]    smoke
