@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    Create all ssh connections
 Library    SSHLibrary
+Library    OperatingSystem
 Resource    ../../ssh_connection.robot
 Force Tags    connections
 
