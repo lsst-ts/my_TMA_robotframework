@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    Create all ssh connections
 Library    SSHLibrary
-Library    OperatingSystem
 Resource    ../../ssh_connection.robot
 Force Tags    connections
 
@@ -13,11 +12,6 @@ Create SAL Event Logger Session
     [Documentation]    Connect to the TMA host.
     [Tags]    smoke
     Open SSH Connection    SALEventLogger    ${timeout}
-
-Testing stuff
-	[Tags]    smoke
-	${output}=    Run    pwd
-	${output}=    Run    ls
 
 Create Operation Manager Session
     [Documentation]    Connect to the TMA host.
